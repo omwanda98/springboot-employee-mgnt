@@ -27,6 +27,11 @@ pipeline {
     post {
         success {
             // Notify on successful deployment, if needed
+            echo 'Deployment successful!'
+        }
+        failure {
+            // Notify on deployment failure, if needed
+            echo 'Deployment failed!'
         }
     }
 }
